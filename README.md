@@ -1,3 +1,3 @@
 # Rival Radar Responsive Landing Page 
 
-👉 Demo:
+👉 Try: https://yaelramirez11.github.io/rival-radar/
