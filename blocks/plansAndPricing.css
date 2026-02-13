@@ -200,3 +200,60 @@
   width: 100%;
   justify-content: center;
 }
+
+@media screen and (max-width: 1250px) {
+  .pricing {
+    width: 90%;
+    max-width: 1200px;
+    margin: 70px auto 140px;
+  }
+
+  .pricing::before {
+    width: 100vw;
+    height: 100%;
+    top: 60%;
+    background-size: contain;
+  }
+
+  .pricing__title {
+    font-size: clamp(40px, 4vw, 56px);
+    text-align: center;
+  }
+
+  .pricing__subtitle {
+    font-size: clamp(16px, 1.5vw, 20px);
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  .pricing__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    height: auto;
+    gap: 20px;
+    align-items: stretch;
+  }
+
+  .pricing__item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
+
+  .pricing__list {
+    margin: 0 25px 30px 25px;
+    max-width: 85%;
+  }
+
+  .pricing__feature-text {
+    font-size: clamp(13px, 1.1vw, 14px);
+    line-height: 1.4;
+  }
+
+  .button--white,
+  .pricing__item .button:not(.button--white) {
+    max-width: calc(100% - 50px);
+    margin: 0 auto 25px auto;
+  }
+}
