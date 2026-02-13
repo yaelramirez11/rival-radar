@@ -1,0 +1,946 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RivalRadar</title>
+    <meta name="description" content="Landing Page - RivalRadar" />
+    <link rel="stylesheet" href="vendor/normalize.css" />
+    <link rel="stylesheet" href="vendor/fonts.css" />
+    <link rel="stylesheet" href="pages/index.css" />
+  </head>
+  <body class="body">
+    <div class="page">
+      <header id="home" class="header">
+        <nav class="nav">
+          <a href="#home" class="nav__logo-link">
+            <img
+              src="./images/brand.svg"
+              alt="Logotipo RivalRadar"
+              class="nav__logo"
+            />
+          </a>
+
+          <ul class="nav__links">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact Us</a>
+            </li>
+            <li class="nav__item"><a href="#faq" class="nav__link">FAQ</a></li>
+            <li class="nav__item">
+              <a href="#pricing" class="nav__link">Pricing</a>
+            </li>
+            <li class="nav__item">
+              <a href="legal.html" class="nav__link">Legal Essentials</a>
+            </li>
+          </ul>
+
+          <a href="#pricing" class="button">
+            Get Started
+            <img src="./images/Vector.svg" alt="Flecha" class="button__icon" />
+          </a>
+        </nav>
+
+        <div class="header__hero-image-container">
+          <img
+            src="images/Encabezado.jpg"
+            alt="Hero section"
+            class="header__image"
+          />
+        </div>
+
+        <div class="header__content">
+          <span class="header__label">BUILT FOR SMART MARKETERS</span>
+
+          <h1 class="header__title">
+            <span class="header__accent">#1</span>
+            Public-Data Competitive Intelligence
+          </h1>
+
+          <p class="header__description">
+            Verifiable signals from public sources turned into clear next steps
+            — channels, budgets, timing.
+          </p>
+
+          <form class="header__form">
+            <label for="email" class="header__label-hidden"
+              >Enter your email</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="header__input"
+              placeholder="Enter your email"
+            />
+
+            <button type="submit" href="#pricing" class="button">
+              Get Started
+              <img
+                src="./images/Vector.svg"
+                alt="Flecha"
+                class="button__icon"
+              />
+            </button>
+          </form>
+        </div>
+      </header>
+
+      <main class="content">
+        <section class="benefits">
+          <h2 class="benefits__title">Why Rival Radar?</h2>
+          <p class="benefits__text">
+            The fastest way to undestand your competitors and act with
+            confidence.
+          </p>
+
+          <div class="benefits__grid">
+            <div class="benefits__item benefits__item--featured">
+              <span class="benefits__tag">
+                <img
+                  class="benefits__tag-icon"
+                  alt="Calendario"
+                  src="images/Calendario.svg"
+                />
+                WEEKLY REPORT
+              </span>
+              <p class="benefits__item-title">
+                Weekly Competitive Intelligence
+              </p>
+              <p class="benefits__item-text">
+                One concise report with ads, offers, pricing, and product
+                changes so you can react quickly.
+              </p>
+            </div>
+
+            <div class="benefits__item benefits__item--strategy">
+              <div class="benefits__tag-container">
+                <span class="benefits__tag-label">CHANNELS</span>
+                <span class="benefits__tag-label">CREATIVE</span>
+                <span class="benefits__tag-label">TIMING</span>
+                <span class="benefits__tag-label">BUDGETS</span>
+              </div>
+              <p class="benefits__item-title">Marketing Strategy</p>
+              <p class="benefits__item-text">
+                If marketing decisions stall, we turn competitor signals into a
+                precise plan.
+              </p>
+            </div>
+
+            <div class="benefits__item benefits__item--simple">
+              <p class="benefits__item-title">Actionable, Not Noisy</p>
+              <p class="benefits__item-text">
+                Clear takeaways and next steps — no dashboards to learn, just
+                decisions to make.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="pricing" class="pricing">
+          <h2 class="pricing__title">Plans & Pricing</h2>
+          <p class="pricing__subtitle">
+            Choose the competitor coverage you need. Upgrade anytime
+          </p>
+
+          <div class="pricing__grid">
+            <div class="pricing__item">
+              <span class="pricing__tag">BASIC</span>
+              <p class="pricing__price">
+                <span class="pricing__amount">$49.99</span>
+                <span class="pricing__period">/month</span>
+              </p>
+
+              <a href="#get-started" class="button button--white">
+                Get Started
+                <img
+                  src="./images/Vector.svg"
+                  alt="Flecha"
+                  class="button__icon button__icon--dark"
+                />
+              </a>
+
+              <img
+                src="./images/vector51.svg"
+                alt="Linea divisora"
+                class="pricing__divider"
+              />
+
+              <p class="pricing__feature-title">Everything in starter plan</p>
+
+              <ul class="pricing__list">
+                <li class="pricing__feature">
+                  <img
+                    src="./images/check.svg"
+                    alt="check"
+                    class="pricing__check"
+                  />
+                  <span class="pricing__feature-text">Track 2 competitors</span>
+                </li>
+                <li class="pricing__feature">
+                  <img
+                    src="./images/check.svg"
+                    alt="check"
+                    class="pricing__check"
+                  />
+                  <span class="pricing__feature-text"
+                    >Email support <strong>(reply with 24 hours)</strong></span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="pricing__wrapper">
+              <span class="pricing__popular-label">MOST POPULAR PLAN</span>
+              <div class="pricing__item pricing__item--pro">
+                <div class="pricing__badge">
+                  <span class="pricing__tag">
+                    <img
+                      src="./images/fire.svg"
+                      alt="Pro plan fire"
+                      class="pricing__icon-fire"
+                    />
+                    PRO
+                  </span>
+                </div>
+                <p class="pricing__price">
+                  <span class="pricing__amount">$99.99</span>
+                  <span class="pricing__period">/month</span>
+                </p>
+
+                <a href="#get-started" class="button">
+                  Get Started
+                  <img
+                    src="./images/Vector.svg"
+                    alt="Flecha"
+                    class="button__icon"
+                  />
+                </a>
+
+                <img
+                  src="./images/vector51.svg"
+                  alt="Linea divisora"
+                  class="pricing__divider"
+                />
+
+                <p class="pricing__feature-title">Everything in starter plan</p>
+
+                <ul class="pricing__list">
+                  <li class="pricing__feature">
+                    <img
+                      src="./images/check.svg"
+                      alt="check"
+                      class="pricing__check"
+                    />
+                    <span class="pricing__feature-text"
+                      >Track 5 competitors</span
+                    >
+                  </li>
+                  <li class="pricing__feature">
+                    <img
+                      src="./images/check.svg"
+                      alt="check"
+                      class="pricing__check"
+                    />
+                    <span class="pricing__feature-text"
+                      >Priority WhatsApp support
+                      <strong>(reply within 12 hours)</strong></span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="pricing__item">
+              <span class="pricing__tag">SCALE</span>
+              <p class="pricing__price">
+                <span class="pricing__amount">$199</span>
+                <span class="pricing__period">/month</span>
+              </p>
+
+              <a href="#get-started" class="button button--white">
+                Get Started
+                <img
+                  src="./images/Vector.svg"
+                  alt="Flecha"
+                  class="button__icon button__icon--dark"
+                />
+              </a>
+
+              <img
+                src="./images/vector51.svg"
+                alt="Linea divisora"
+                class="pricing__divider"
+              />
+
+              <p class="pricing__feature-title">Everything in starter plan</p>
+
+              <ul class="pricing__list">
+                <li class="pricing__feature">
+                  <img
+                    src="./images/check.svg"
+                    alt="check"
+                    class="pricing__check"
+                  />
+                  <span class="pricing__feature-text"
+                    >Track up to 20 competitors</span
+                  >
+                </li>
+                <li class="pricing__feature">
+                  <img
+                    src="./images/check.svg"
+                    alt="check"
+                    class="pricing__check"
+                  />
+                  <span class="pricing__feature-text"
+                    >Priority WhatsApp support
+                    <strong>(reply within 12 hours)</strong></span
+                  >
+                </li>
+                <li class="pricing__feature">
+                  <img
+                    src="./images/check.svg"
+                    alt="check"
+                    class="pricing__check"
+                  />
+                  <span class="pricing__feature-text"
+                    ><strong>Strategy call:</strong> live review of your report
+                    with our CEO</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section id="faq" class="faq">
+          <div class="faq__container">
+            <h2 class="faq__title">Questions? Answers!</h2>
+            <p class="faq__subtitle">
+              Quick answers about coverage, data sources, and delivery.
+            </p>
+            <div class="faq__grid">
+              <article
+                class="faq__card"
+                role="button"
+                tabindex="0"
+                aria-label="Pregunta frecuente: Haz clic para ver respuesta"
+              >
+                <div class="faq__card-inner">
+                  <div class="faq__front">
+                    <div class="faq__header">
+                      <span class="faq__header--text"
+                        ><span class="faq__dot"></span>Quick answer</span
+                      >
+                      <span class="faq__header--label">Weekly brief</span>
+                    </div>
+                    <h3 class="faq__question">What arrives each week?</h3>
+                    <p class="faq__text">
+                      Every week you receive a concise market intelligence brief
+                      summarising competitor signals you can review in minutes.
+                    </p>
+                    <div class="faq__hint">
+                      <svg
+                        viewBox="0 0 24 24"
+                        width="16"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path d="M9 6l6 6-6 6" />
+                      </svg>
+                      <span class="faq__hint--text">Tap for details</span>
+                    </div>
+                  </div>
+
+                  <div class="faq__back">
+                    <div class="faq__header">
+                      <span class="faq__header--text">Details</span>
+                      <span class="faq__header--label">Weekly brief</span>
+                    </div>
+                    <p class="faq__back--text">
+                      Your weekly brief highlights pricing changes, messaging
+                      shifts, ads and product launches shaping your market. Each
+                      insight links to a public source for fast verification.
+                    </p>
+                    <div class="faq__proof">
+                      <strong class="faq__proof--strong">Essential:</strong>
+                      focus on strategy while we track the market for you.
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article
+                class="faq__card"
+                role="button"
+                tabindex="0"
+                aria-label="Pregunta frecuente: Haz clic para ver respuesta"
+              >
+                <div class="faq__card-inner">
+                  <div class="faq__front">
+                    <div class="faq__header">
+                      <span class="faq__header--text"
+                        ><span class="faq__dot"></span>Data sources</span
+                      >
+                      <span class="faq__header--label">Public sources</span>
+                    </div>
+                    <h3 class="faq__question">
+                      Where do you get your insights?
+                    </h3>
+                    <p class="faq__text">
+                      We rely only on publicly available websites and official
+                      channels—nothing private or gated.
+                    </p>
+                    <div class="faq__hint">
+                      <svg
+                        viewBox="0 0 24 24"
+                        width="16"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path d="M9 6l6 6-6 6" />
+                      </svg>
+                      <span class="faq__hint--text">Tap for details</span>
+                    </div>
+                  </div>
+
+                  <div class="faq__back">
+                    <div class="faq__header">
+                      <span class="faq__header--text">Details</span>
+                      <span class="faq__header--label">Public sources</span>
+                    </div>
+                    <p class="faq__back--text">
+                      We monitor competitor websites, pricing pages, publicly
+                      disclosed ad libraries and official announcements. No
+                      logins, no personal data—just transparent, verifiable
+                      sources.
+                    </p>
+                    <div class="faq__proof">
+                      <strong class="faq__proof--strong">Trust:</strong>
+                      every insight cites the original public page.
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article
+                class="faq__card"
+                role="button"
+                tabindex="0"
+                aria-label="Pregunta frecuente: Haz clic para ver respuesta"
+              >
+                <div class="faq__card-inner">
+                  <div class="faq__front">
+                    <div class="faq__header">
+                      <span class="faq__header--text"
+                        ><span class="faq__dot"></span>Quality control</span
+                      >
+                      <span class="faq__header--label">Expert-curated</span>
+                    </div>
+                    <h3 class="faq__question">
+                      How do you separate signal from noise?
+                    </h3>
+                    <p class="faq__text">
+                      Each change is reviewed by experts and prioritised by
+                      business impact.
+                    </p>
+                    <div class="faq__hint">
+                      <svg
+                        viewBox="0 0 24 24"
+                        width="16"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path d="M9 6l6 6-6 6" />
+                      </svg>
+                      <span class="faq__hint--text">Tap for details</span>
+                    </div>
+                  </div>
+
+                  <div class="faq__back">
+                    <div class="faq__header">
+                      <span class="faq__header--text">Details</span>
+                      <span class="faq__header--label">Expert-curated</span>
+                    </div>
+                    <p class="faq__back--text">
+                      Our analysts verify what changed, add context on why it
+                      matters, and filter out low‑impact updates. You react only
+                      to meaningful shifts, not every tiny tweak.
+                    </p>
+                    <div class="faq__proof">
+                      <strong class="faq__proof--strong">Result:</strong>
+                      more signal, less noise.
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article
+                class="faq__card"
+                role="button"
+                tabindex="0"
+                aria-label="Pregunta frecuente: Haz clic para ver respuesta"
+              >
+                <div class="faq__card-inner">
+                  <div class="faq__front">
+                    <div class="faq__header">
+                      <span class="faq__header--text"
+                        ><span class="faq__dot"></span>Flexibility</span
+                      >
+                      <span class="faq__header--label">No lock‑in</span>
+                    </div>
+                    <h3 class="faq__question">
+                      Can I change competitors or pause?
+                    </h3>
+                    <p class="faq__text">
+                      Yes—adjust your coverage, pause or cancel anytime.
+                    </p>
+                    <div class="faq__hint">
+                      <svg
+                        viewBox="0 0 24 24"
+                        width="16"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path d="M9 6l6 6-6 6" />
+                      </svg>
+                      <span class="faq__hint--text">Tap for details</span>
+                    </div>
+                  </div>
+
+                  <div class="faq__back">
+                    <div class="faq__header">
+                      <span class="faq__header--text">Details</span>
+                      <span class="faq__header--label">No lock‑in</span>
+                    </div>
+                    <p class="faq__back--text">
+                      Update the companies you track at any time, pause when
+                      you’re busy and resume when ready.
+                    </p>
+                    <div class="faq__proof">
+                      <strong class="faq__proof--strong">Practical:</strong>
+                      stay aligned with your evolving market.
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="testimonials">
+          <div class="testimonials__container">
+            <h2 class="testimonials__title">Straight from our DMs</h2>
+            <p class="testimonials__subtitle">
+              We don’t need to brag — our clients do it for us. Here are a few
+              messages that made our day.
+            </p>
+
+            <div class="testimonials__grid">
+              <article class="testimonials__card">
+                <header class="testimonials__card-header">
+                  <img
+                    src="./images/mark.jpg"
+                    alt="Mark T."
+                    class="testimonials__avatar"
+                  />
+                  <div class="testimonials__author-info">
+                    <span class="testimonials__name">Mark T.</span>
+                    <span class="testimonials__occupation"
+                      >CEO of VisionIQ</span
+                    >
+                  </div>
+                  <img
+                    src="./images/comillas.svg"
+                    alt="comillas azules"
+                    class="testimonials__quote-icon"
+                  />
+                </header>
+                <p class="testimonials__card-text">
+                  The insights we gained from Public Data completely changed how
+                  we approach market research. Their reports are accurate, easy
+                  to understand, and always on time. It’s like having a full
+                  data team on demand.
+                </p>
+              </article>
+
+              <article class="testimonials__card">
+                <header class="testimonials__card-header">
+                  <img
+                    src="./images/sarah.jpg"
+                    alt="Sarah L."
+                    class="testimonials__avatar"
+                  />
+                  <div class="testimonials__author-info">
+                    <span class="testimonials__name">Sarah L.</span>
+                    <span class="testimonials__occupation"
+                      >Head of Strategy at Nexora</span
+                    >
+                  </div>
+                  <img
+                    src="./images/comillas.svg"
+                    alt="comillas azules"
+                    class="testimonials__quote-icon"
+                  />
+                </header>
+                <p class="testimonials__card-text">
+                  Before using Public Data, we were making decisions based on
+                  assumptions. Now, every move we make is backed by solid data
+                  and clear insights.
+                </p>
+              </article>
+
+              <article class="testimonials__card">
+                <header class="testimonials__card-header">
+                  <img
+                    src="./images/julia.jpg"
+                    alt="Julia P."
+                    class="testimonials__avatar"
+                  />
+                  <div class="testimonials__author-info">
+                    <span class="testimonials__name">Julia P.</span>
+                    <span class="testimonials__occupation"
+                      >Growth Manager at Orion Analytics</span
+                    >
+                  </div>
+                  <img
+                    src="./images/comillas.svg"
+                    alt="comillas azules"
+                    class="testimonials__quote-icon"
+                  />
+                </header>
+                <p class="testimonials__card-text">
+                  Public Data helped us identify new opportunities and
+                  outperform our competitors in less than a quarter. The depth
+                  of their intelligence is unmatched.
+                </p>
+              </article>
+
+              <article class="testimonials__card">
+                <header class="testimonials__card-header">
+                  <img
+                    src="./images/daniel.jpg"
+                    alt="Daniel R."
+                    class="testimonials__avatar"
+                  />
+                  <div class="testimonials__author-info">
+                    <span class="testimonials__name">Daniel R.</span>
+                    <span class="testimonials__occupation"
+                      >Operations Director at Stratek</span
+                    >
+                  </div>
+                  <img
+                    src="./images/comillas.svg"
+                    alt="comillas azules"
+                    class="testimonials__quote-icon"
+                  />
+                </header>
+                <p class="testimonials__card-text">
+                  What I appreciate most is their transparency and speed. Public
+                  Data feels more like a strategic partner than just a service
+                  provider.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section id="contact" class="insights">
+          <div class="insights__container">
+            <h2 class="insights__title">Get competitor Insights</h2>
+            <p class="insights__subtitle">
+              Tell us who your compete with and we’ll share a targeted sample.
+            </p>
+
+            <div class="insights__grid">
+              <article class="insights__card">
+                <header class="insights__card-header">
+                  <img
+                    src="./images/email.png"
+                    alt="Logo de email"
+                    class="insights__card-icon"
+                  />
+                  <span class="insights__card-label">Email Us</span>
+                </header>
+                <div class="insights__card-body">
+                  <p class="insights__card-text">
+                    Facing technical challenges or product concerns? We’re here
+                    to assist
+                  </p>
+                </div>
+                <footer class="insights__card-footer">
+                  <a href="mailto:info@rivalradar.net" class="insights__link"
+                    >info@rivalradar.net</a
+                  >
+                </footer>
+              </article>
+
+              <article class="insights__card">
+                <header class="insights__card-header">
+                  <img
+                    src="./images/phonecall.png"
+                    alt="Logo de phonecall"
+                    class="insights__card-icon"
+                  />
+                  <span class="insights__card-label">Contact Sales</span>
+                </header>
+                <div class="insights__card-body">
+                  <p class="insights__card-text">
+                    Let’s collaborate on custom solutions or discuss product
+                    insights
+                  </p>
+                </div>
+                <footer class="insights__card-footer">
+                  <a href="#" class="insights__link">Book a call</a>
+                </footer>
+              </article>
+
+              <article class="insights__card insights__card--form">
+                <header
+                  class="insights__card-header insights__card-header--form"
+                >
+                  <img
+                    src="./images/assistance.png"
+                    alt="asistencia"
+                    class="insights__card-icon"
+                  />
+                  <span class="insights__card-label insights__card-label--form">
+                    We’d love to help! Let us know how
+                  </span>
+                </header>
+
+                <div class="insights__form-wrapper">
+                  <form action="#" class="form">
+                    <div class="form__grid">
+                      <div class="form__group">
+                        <label for="full-name" class="form__label"
+                          >Full Name
+                          <span class="form__required">*</span></label
+                        >
+                        <input
+                          id="full-name"
+                          name="full-name"
+                          type="text"
+                          class="form__input"
+                          placeholder="John Smith"
+                          required
+                        />
+                      </div>
+
+                      <div class="form__group">
+                        <label for="platform" class="form__label"
+                          >E-commerce Platform
+                          <span class="form__required">*</span></label
+                        >
+                        <input
+                          id="platform"
+                          name="platform"
+                          type="text"
+                          class="form__input"
+                          placeholder="www.shopify.com/johnsmith"
+                          required
+                        />
+                      </div>
+
+                      <div class="form__group">
+                        <label for="email" class="form__label"
+                          >Work Email
+                          <span class="form__required">*</span></label
+                        >
+                        <input
+                          id="email"
+                          name="email"
+                          type="email"
+                          class="form__input"
+                          placeholder="john.smith@gmail.com"
+                          required
+                        />
+                      </div>
+
+                      <div class="form__group">
+                        <label for="competitors" class="form__label"
+                          >Competitors to Track
+                          <strong>(at least two domains)</strong>
+                          <span class="form__required">*</span></label
+                        >
+                        <div class="form__input-container">
+                          <input
+                            id="competitors"
+                            name="competitors"
+                            type="text"
+                            class="form__input"
+                            placeholder="john.smith@gmail.com"
+                            required
+                          />
+                          <button
+                            type="button"
+                            class="form__add-btn"
+                            aria-label="Add competitor"
+                          >
+                            <img
+                              src="./images/positivo.svg"
+                              alt="Añadir"
+                              class="form__add-icon"
+                            />
+                          </button>
+                        </div>
+                      </div>
+
+                      <div class="form__group">
+                        <label for="company" class="form__label"
+                          >Company / Brand
+                          <span class="form__required">*</span></label
+                        >
+                        <input
+                          id="company"
+                          name="company"
+                          type="text"
+                          class="form__input"
+                          placeholder="Smith’s Company"
+                          required
+                        />
+                      </div>
+
+                      <div class="form__group">
+                        <label for="message" class="form__label"
+                          >How may we assist you?</label
+                        >
+                        <textarea
+                          id="message"
+                          name="message"
+                          class="form__input form__input--textarea"
+                          placeholder="Give us more info.."
+                        ></textarea>
+                      </div>
+
+                      <div class="form__group">
+                        <label for="website" class="form__label"
+                          >Website URL
+                          <span class="form__required">*</span></label
+                        >
+                        <input
+                          id="website"
+                          name="website"
+                          type="url"
+                          class="form__input"
+                          placeholder="www.johnsmith.com"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <footer
+                  class="insights__card-footer insights__card-footer--form"
+                >
+                  <a href="#pricing" class="button">
+                    Get Started
+                    <img
+                      src="./images/Vector.svg"
+                      alt="Flecha"
+                      class="button__icon"
+                    />
+                  </a>
+                </footer>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="cta-banner">
+          <div class="cta-banner__container">
+            <h2 class="cta-banner__title">
+              Ready to act on competitor intelligence?
+            </h2>
+            <p class="cta-banner__description">
+              Subscribe to Rival Radar for concise, verifiable competitor
+              insights—designed for fast decisions.
+            </p>
+
+            <a href="#pricing" class="cta-banner__link">
+              See Plans & Pricing
+              <img
+                src="./images/Vector.svg"
+                alt="Flecha"
+                class="cta-banner__link-icon"
+              />
+            </a>
+
+            <div class="cta-banner__info">
+              <span class="cta-banner__legal"
+                >• Public-data only • Secure checkout •
+                GDPR/CCPA-friendly.</span
+              >
+              <span class="cta-banner__contact">
+                You can also email us at
+                <a href="mailto:info@rivalradar.net" class="cta-banner__email"
+                  >info@rivalradar.net</a
+                >
+              </span>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__header">
+            <a href="#home" class="footer__logo-link">
+              <img
+                src="./images/brand.svg"
+                alt="Logotipo RivalRadar"
+                class="footer__logo"
+              />
+            </a>
+            <img
+              src="./images/instagram.svg"
+              alt="Instagram"
+              class="footer__social-icon"
+            />
+          </div>
+
+          <nav class="footer__nav">
+            <ul class="footer__links">
+              <li class="footer__item">
+                <a href="#home" class="footer__link">Home</a>
+              </li>
+              <li class="footer__item">
+                <a href="#contact" class="footer__link">Contact Us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#faq" class="footer__link">FAQ</a>
+              </li>
+              <li class="footer__item">
+                <a href="#pricing" class="footer__link">Pricing</a>
+              </li>
+              <li class="footer__item">
+                <a href="legal.html" class="footer__link">Legal Essentials</a>
+              </li>
+            </ul>
+
+            <a href="#pricing" class="footer__cta">
+              Get Started
+              <img
+                src="./images/Vector.svg"
+                alt="Flecha"
+                class="footer__cta-icon"
+              />
+            </a>
+          </nav>
+
+          <img
+            src="./images/dividerLine.svg"
+            alt="línea divisoria"
+            class="footer__divider"
+          />
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copy">© 2025 Rival Radar</p>
+          <a href="mailto:info@rivalradar.net" class="footer__email"
+            >info@rivalradar.net</a
+          >
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="./scripts/script.js"></script>
+  </body>
+</html>

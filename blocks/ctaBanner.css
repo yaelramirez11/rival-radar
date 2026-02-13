@@ -1,0 +1,131 @@
+.cta-banner {
+  max-width: 1200px;
+  width: 100%;
+  margin: 80px auto;
+  border-radius: 64px;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(180deg, #517cee 0%, #1f5bf1 100%);
+  box-shadow:
+    0 30px 30px -1.75px rgba(16, 49, 77, 0.1),
+    0 13.85px 13.85px -1.46px rgba(16, 49, 77, 0.07);
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  height: auto;
+}
+
+.cta-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/texture.png");
+  background-size: cover;
+  opacity: 0.9;
+  pointer-events: none;
+  filter: brightness(1.5) contrast(1.2);
+  -webkit-mask-image: linear-gradient(
+    45deg,
+    black 0%,
+    transparent 35%,
+    transparent 65%,
+    black 100%
+  );
+  mask-image: linear-gradient(
+    45deg,
+    black 0%,
+    transparent 35%,
+    transparent 65%,
+    black 100%
+  );
+}
+
+.cta-banner__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cta-banner__title {
+  font-size: 50px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.cta-banner__description {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.cta-banner__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  height: 56px;
+  padding: 0 24px;
+  font-size: 22px;
+  font-weight: 300;
+  color: #000000;
+  text-decoration: none;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.1),
+    inset 0 4px 6px rgba(255, 255, 255, 0.8),
+    inset 0 -4px 8px rgba(14, 28, 41, 0.2),
+    inset 0 -1px 0px rgba(14, 28, 41, 0.1);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  margin: 25px 0;
+  max-width: 300px;
+  width: 100%;
+}
+
+.cta-banner__link:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow:
+    0 15px 30px rgba(0, 0, 0, 0.15),
+    inset 0 4px 4px rgba(255, 255, 255, 0.25),
+    inset 0 -2px 4px rgba(14, 28, 41, 0.15);
+  filter: brightness(1.02);
+}
+
+.cta-banner__link-icon {
+  width: 25px;
+  height: 25px;
+  filter: invert(1);
+}
+
+.cta-banner__info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cta-banner__legal,
+.cta-banner__contact {
+  font-size: 18px;
+}
+
+.cta-banner__contact {
+  margin-bottom: 40px;
+}
+
+.cta-banner__email {
+  color: #fff;
+  text-decoration: underline;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.cta-banner__email:hover {
+  transform: translateY(-3px);
+}

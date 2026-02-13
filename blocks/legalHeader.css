@@ -1,0 +1,59 @@
+.header--legal {
+  height: auto;
+  min-height: 650px;
+  max-height: 700px;
+  overflow: hidden;
+  background: #0e1c29;
+  position: relative;
+  background-image:
+    radial-gradient(
+      ellipse at 65% 50%,
+      rgba(14, 28, 41, 0.1) 0%,
+      rgba(14, 28, 41, 0.8) 10%,
+      #0e1c29 70%
+    ),
+    url("../images/texture.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+}
+
+.header__content--legal {
+  position: relative;
+  width: 100%;
+  max-width: 453px;
+  margin-top: 40px;
+  height: auto;
+  top: 100px;
+}
+
+.header__title--legal {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100%;
+  margin: 12px 0;
+  color: #fff;
+}
+
+.header__description--legal {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 200;
+}
+.header__description--text {
+  color: #9fa4a9;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.nav__logo {
+  background-color: transparent;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
