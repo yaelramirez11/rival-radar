@@ -130,7 +130,7 @@
   transform: translateY(-3px);
 }
 
-@media (max-width: 1300px) {
+@media screen and (max-width: 1300px) {
   .cta-banner {
     width: 90%;
     max-width: 1200px;
@@ -167,7 +167,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .cta-banner {
     width: 94%;
     padding: 50px 15px;

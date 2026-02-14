@@ -257,3 +257,80 @@
     margin: 0 auto 25px auto;
   }
 }
+
+@media screen and (max-width: 905px) {
+  .pricing__grid {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    row-gap: 80px;
+  }
+
+  .pricing__item {
+    width: 100%;
+  }
+
+  .pricing__wrapper {
+    width: 100%;
+  }
+
+  .pricing__item .button,
+  .button--white {
+    max-width: 80%;
+    width: calc(100% - 50px);
+  }
+  .pricing__item .button:not(.button--white) {
+    max-width: 80%;
+    width: calc(100% - 50px);
+  }
+
+  .pricing::before {
+    background-image: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .pricing {
+    width: 100%;
+  }
+
+  .pricing__grid {
+    width: 100%;
+    max-width: 500px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .pricing {
+    width: 100%;
+    max-width: 550px;
+  }
+
+  .pricing__grid {
+    width: 100%;
+    max-width: 370px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .pricing {
+    width: 100%;
+  }
+
+  .pricing__grid {
+    width: 100%;
+    max-width: 330px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .pricing {
+    width: 100%;
+  }
+
+  .pricing__grid {
+    width: 100%;
+    max-width: 330px;
+  }
+}
