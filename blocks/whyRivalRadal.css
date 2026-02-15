@@ -68,7 +68,7 @@
     linear-gradient(to bottom, #f0f0f0 0%, #ffffff 100%);
   background-position:
     top left,
-    top center,
+    top 4% center,
     center,
     top;
   background-size:
@@ -76,6 +76,7 @@
     380px auto,
     380px auto,
     cover;
+  position: relative;
 }
 
 .benefits__item--simple {
@@ -128,9 +129,10 @@
   display: flex;
   justify-content: center;
   gap: 25px;
-  flex-wrap: wrap;
-  margin-bottom: 80px;
-  width: 100%;
+  flex-wrap: nowrap;
+  width: 89%;
+  position: absolute;
+  top: 25%;
 }
 
 .benefits__tag-label {
@@ -226,9 +228,11 @@
   }
 
   .benefits__tag-container {
-    margin-bottom: 60px;
+    gap: 20px;
     flex-wrap: nowrap;
-    width: 100%;
+    width: 89%;
+    position: absolute;
+    top: 25%;
   }
 
   .benefits__item-title {
@@ -240,23 +244,14 @@
     font-size: clamp(14px, 1.3vw, 16px);
   }
 }
-@media screen and (max-width: 1180px) {
-  .benefits__tag-container {
-    gap: 20px;
-    width: 100%;
-    margin-bottom: 70px;
-    flex-wrap: nowrap;
-  }
-}
 
 @media screen and (max-width: 1150px) {
   .benefits__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    gap: 8px;
-    padding: 30px 20px;
+    aspect-ratio: auto;
+    min-height: 280px;
+    width: 100%;
+    max-width: 100%;
+    padding: clamp(15px, 2vw, 25px);
   }
 
   .benefits__item-title,
@@ -284,12 +279,14 @@
   }
 }
 
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 1130px) and (min-width: 1000px) {
   .benefits__tag-container {
-    margin-bottom: 72px;
+    gap: 18px;
     flex-wrap: nowrap;
-    gap: 8px;
-    height: 40px;
+    width: 95%;
+    position: absolute;
+    top: 27%;
+    left: 1%;
   }
 
   .benefits__item-title {
@@ -301,25 +298,32 @@
     font-size: 1.5vw;
     line-height: 1.2;
   }
-}
 
-@media screen and (max-width: 1050px) {
-  .benefits__tag-container {
-    margin-bottom: 73px;
-    flex-wrap: nowrap;
-    gap: 4px;
-    height: 40px;
+  .benefits__item--strategy {
+    background-position:
+      top left,
+      top 8% center,
+      center,
+      top;
+  }
+
+  .benefits__item {
+    aspect-ratio: auto;
+    min-height: 280px;
+    width: 100%;
+    max-width: 100%;
+    padding: clamp(15px, 2vw, 25px);
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 999px) {
   .benefits__tag-container {
-    margin-bottom: 78px;
+    gap: 18px;
     flex-wrap: nowrap;
-    gap: 4px;
-    height: 40px;
-    display: flex;
-    justify-content: space-between;
+    width: 95%;
+    position: absolute;
+    top: 27%;
+    left: 1%;
   }
 
   .benefits__item-title {
@@ -335,14 +339,9 @@
   .benefits__item--strategy {
     background-position:
       top left,
-      top center,
+      top 8% center,
       center,
       top;
-    background-size:
-      auto,
-      85% auto,
-      85% auto,
-      cover;
   }
 
   .benefits__tag-label {
@@ -391,9 +390,12 @@
   }
 
   .benefits__tag-container {
-    margin-bottom: 80px;
-    gap: 2px;
-    height: 30px;
+    gap: 18px;
+    flex-wrap: nowrap;
+    width: 95%;
+    position: absolute;
+    top: 27%;
+    left: 1%;
   }
 
   .benefits__tag-label {
@@ -435,6 +437,14 @@
   .benefits__item--strategy {
     grid-row: 2;
     position: relative;
+
+    background-position:
+      top left,
+      top center,
+      center,
+      top;
+
+    background-size: auto, auto, auto, cover;
   }
 
   .benefits__item--simple {
@@ -462,16 +472,12 @@
   }
 
   .benefits__tag-container {
+    gap: 10%;
+    flex-wrap: nowrap;
+    width: 95%;
     position: absolute;
-    top: 32%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    width: 100%;
-    max-width: 90%;
+    top: 25%;
+    left: 1%;
   }
 
   .benefits__tag-label {
@@ -480,7 +486,7 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) and (min-width: 550px) {
   .benefits__item-title {
     font-size: 3.5vw;
   }
@@ -493,9 +499,26 @@
     width: 95%;
     gap: 20px;
   }
+  .benefits__item--strategy {
+    background-position:
+      top left,
+      top center,
+      center,
+      top;
+
+    background-size: auto, auto, auto, cover;
+  }
+  .benefits__tag-container {
+    gap: 12%;
+    flex-wrap: nowrap;
+    width: 95%;
+    position: absolute;
+    top: 25%;
+    left: 2%;
+  }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .benefits__item-title {
     font-size: 4vw;
   }
@@ -508,9 +531,32 @@
     width: 95%;
     gap: 18px;
   }
+
+  .benefits__item--strategy {
+    background-position:
+      top left,
+      top 12% center,
+      center,
+      top;
+
+    background-size:
+      100% auto,
+      80% auto,
+      80% auto,
+      cover;
+  }
+
+  .benefits__tag-container {
+    gap: 10%;
+    flex-wrap: nowrap;
+    width: 95%;
+    position: absolute;
+    top: 28%;
+    left: 2%;
+  }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) and (min-width: 380px) {
   .benefits__item-title {
     font-size: 5vw;
   }
@@ -522,5 +568,74 @@
   .benefits__grid {
     width: 95%;
     gap: 18px;
+  }
+  .benefits__item--strategy {
+    background-position:
+      top left,
+      top 17% center,
+      center,
+      top;
+
+    background-size:
+      100% auto,
+      80% auto,
+      80% auto,
+      cover;
+  }
+
+  .benefits__tag-container {
+    gap: 5%;
+    flex-wrap: nowrap;
+    width: 95%;
+    position: absolute;
+    top: 31%;
+    left: 2%;
+  }
+
+  .benefits__tag-label {
+    font-size: 2vw;
+    padding: 2.5% 4%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .benefits__item-title {
+    font-size: 5vw;
+  }
+  .benefits__item-text {
+    font-size: 4vw;
+    margin-left: 0;
+  }
+
+  .benefits__grid {
+    width: 95%;
+    gap: 18px;
+  }
+  .benefits__item--strategy {
+    background-position:
+      top left,
+      top 20% center,
+      center,
+      top;
+
+    background-size:
+      100% auto,
+      80% auto,
+      80% auto,
+      cover;
+  }
+
+  .benefits__tag-container {
+    gap: 7%;
+    flex-wrap: nowrap;
+    width: 95%;
+    position: absolute;
+    top: 31%;
+    left: 2%;
+  }
+
+  .benefits__tag-label {
+    font-size: 2vw;
+    padding: 4.5% 3%;
   }
 }

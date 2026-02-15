@@ -3,8 +3,23 @@ document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.querySelector("#mobile-menu");
   const navContent = document.querySelector("#nav-content");
   const navLinks = document.querySelectorAll(".nav__link");
+  const faqCards = document.querySelectorAll(".faq__card");
+  const isTouchDevice = window.matchMedia("(hover: none)").matches;
 
-  // --- 1. FUNCIÓN DE SCROLL (Tu código original) ---
+  if (isTouchDevice) {
+    faqCards.forEach((card) => {
+      card.addEventListener("click", () => {
+        card.classList.toggle("is-active");
+      });
+      card.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          card.classList.toggle("is-active");
+        }
+      });
+    });
+  }
+
   const handleScroll = () => {
     if (window.scrollY > 200) {
       nav.classList.add("nav--scrolled");
@@ -16,15 +31,12 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", handleScroll);
   handleScroll();
 
-  // --- 2. FUNCIÓN DEL MENÚ MÓVIL (Nueva) ---
   if (menuToggle && navContent) {
     menuToggle.addEventListener("click", () => {
-      // Animación de las rayitas
       menuToggle.classList.toggle("is-active");
-      // Abrir/Cerrar el panel lateral
+
       navContent.classList.toggle("open");
 
-      // Bloquear scroll del body para que no se mueva el fondo al navegar el menú
       if (navContent.classList.contains("open")) {
         document.body.style.overflow = "hidden";
       } else {
@@ -33,7 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // --- 3. CERRAR MENÚ AL CLICK EN LINK (Recomendado) ---
   navLinks.forEach((link) => {
     link.addEventListener("click", () => {
       menuToggle.classList.remove("is-active");

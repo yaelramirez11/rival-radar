@@ -135,7 +135,6 @@
     width: 90%;
     max-width: 1200px;
     margin: 60px auto;
-
     border-radius: clamp(32px, 5vw, 64px);
     padding: clamp(40px, 6vw, 80px) 20px;
   }
@@ -169,7 +168,7 @@
 
 @media screen and (max-width: 480px) {
   .cta-banner {
-    width: 94%;
+    width: 80%;
     padding: 50px 15px;
     border-radius: 32px;
   }

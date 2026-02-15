@@ -80,7 +80,8 @@
     opacity 0.4s ease;
 }
 
-.faq__card:hover .faq__front {
+.faq__card:hover .faq__front,
+.faq__card.is-active .faq__front {
   transform: translateY(-5%);
   opacity: 0;
 }
@@ -95,7 +96,8 @@
   border: 1px solid #1f5bf1;
 }
 
-.faq__card:hover .faq__back {
+.faq__card:hover .faq__back,
+.faq__card.is-active .faq__back {
   transform: scale(1);
 }
 
